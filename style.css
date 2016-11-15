@@ -1,26 +1,57 @@
 body
 {
 	font-family: Muli;	
+  background-image: url("img/barcelona_street.JPG");
+  background-size: 100%;
+  background-attachment: fixed;
+  margin:0px;
+}
+
+h1,h2
+{
+  text-align: center;  
+  color: white; 
+}
+
+h1,h3 
+{
+  font-family: 'Yeseva One';	
 }
 
 h3 
 {
-font-family: 'Yeseva One';	
-
+  /* This ugly code makes the gradient */
   background-color: #f54949;	
+  background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.08, #f5764a));
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.08, #f5764a));
   background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.08, #f5764a));
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
+
+  /* This needs to be here for the underline to work */
+  position: relative;
 }
 
 h3:after 
 {
-    content: ' ';
-    display: block;
-    border: 1px solid orange;
-    width: 100px;
+  /* This makes the underline */
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 2px;
+  width: 175px;
+  top: 25px;
+  background: #444;
+  background: -moz-linear-gradient(left, #f54949 0%, #f5764a 100%);
+  background: -webkit-linear-gradient(left, #f54949 0%, #f5764a 100%);
+  background: linear-gradient(left, #f54949 0%, #f5764a 100%);
+}
 
-	-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+#title
+{
+  background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));  
+  background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));  
 }
