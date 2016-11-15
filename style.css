@@ -1,0 +1,26 @@
+body
+{
+	font-family: Muli;	
+}
+
+h3 
+{
+font-family: 'Yeseva One';	
+
+  background-color: #f54949;	
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.08, #f5764a));
+  background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.08, #f5764a));
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h3:after 
+{
+    content: ' ';
+    display: block;
+    border: 1px solid orange;
+    width: 100px;
+
+	-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
