@@ -1,16 +1,32 @@
 body
 {
-	font-family: Muli;	
+	font-family: 'Muli';	
   background-image: url("img/barcelona_street.JPG");
   background-size: 100%;
   background-attachment: fixed;
   margin:0px;
 }
 
+h1
+{
+  font-size: 80px;
+  top: 40%;  
+  color: white; 
+}
+
+h2
+{
+  font-size: 20px;
+  position: relative;
+  top: 33%;
+  color: rgba(255,255,255,0.6);
+}
+
 h1,h2
 {
   text-align: center;  
-  color: white; 
+  position: relative;
+  font-weight: 100;
 }
 
 h1,h3 
@@ -20,6 +36,9 @@ h1,h3
 
 h3 
 {
+  font-size: 55px;
+  font-weight: 100;
+
   /* This ugly code makes the gradient */
   background-color: #f54949;	
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.08, #f5764a));
@@ -40,18 +59,59 @@ h3:after
   position: absolute;
   bottom: 0px;
   left: 0;
-  height: 2px;
-  width: 175px;
-  top: 25px;
+  height: 1px;
+  width: 350px;
+  top: 80px;
   background: #444;
   background: -moz-linear-gradient(left, #f54949 0%, #f5764a 100%);
   background: -webkit-linear-gradient(left, #f54949 0%, #f5764a 100%);
   background: linear-gradient(left, #f54949 0%, #f5764a 100%);
 }
 
+.section
+{
+  height: 800px;
+  padding: 100px;
+  color: white;
+}
+
+.white_section
+{
+  background-color: rgb(252,251,246);
+  color: black;
+}
+
+.line
+{
+  position: relative;
+  width: 300px;
+  height: 2px;
+  background-color: white;
+  margin: auto;
+  top: 35%;  
+}
+
 #title
 {
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));
-  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));  
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgba(245,73,73,0.8)), color-stop(50%, rgba(245,118,73,0.8)));  
   background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));  
+}
+
+#writings
+{
+  background-image: url('img/station.JPG');
+  background-size: 100%;
+}
+
+#science
+{
+  background-image: url('img/fountain.JPG');
+  background-size: 100%;
+}
+
+#media_attention
+{
+  background-image: url('img/sweets.JPG');
+  background-size: 100%;
 }
