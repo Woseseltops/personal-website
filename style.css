@@ -138,14 +138,15 @@ li
 
 #writings
 {
-  background-image: url('img/station.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/station.JPG');
   background-size: 100%;
 }
 
 #science
 {
-  background-image: url('img/fountain.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/fountain.JPG');
   background-size: 100%;
+  position:relative;
 }
 
 #software_projects
@@ -155,6 +156,6 @@ li
 
 #media_attention
 {
-  background-image: url('img/sweets.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/sweets.JPG');
   background-size: 100%;
 }
