@@ -13,28 +13,40 @@
 </div>
 
 <div class="section white_section" id="welcome">
-	<h3>Welcome</h3>
-	<p>Welcome! My name is Wessel Stoop. I work with language & machine learning, and make videogames in my free time. This website aims to be a complete collection of texts I write, my software projects, and what the media write about all of this. Furthermore, this website contains some pictures of me to prove that I totally do not spend all of my days staring at a computer screen.</p>
+	<img class="sidephoto" src="img/me.JPG">
+	<h3 class="photo_present">Welcome</h3>
+	<p>Welcome! My name is Wessel Stoop. I work with language & machine learning, and make videogames in my free time. This website aims to be a complete collection of texts I write, my software projects, and what the media write about these two. Furthermore, this website contains some pictures of me to suggest that I totally do not spend all of my days staring at a computer screen.</p>
 </div>
 
 <div class="section" id="science">
 	<h3>Science</h3>
 	<ul>
-		<li>Stoop & Van den Bosch (2014). Using ideolects to asdfsdf.<br/>
-		A short paper that describes how you can improve text prediction for a person by training the predictor on his/her own written texts (an idea we call ´idiolect´, taken from sociolinguistics). As an example, we predict tweets of a person by training on the earlier tweets of that same person. Interestingly, friends talk that much alike that you can also train on the tweets of friends and have even better predictions.</li>
-		<li>Suzanne</li>
-		<li>Lieke</li>
+		<li>Dreams<br/>
+
+		<li>L. Verheijen & W. Stoop (2015)<br/>
+		For digital language researchers, Twitter has been the main resource. Facebook, which has a much larger audience, is unfortunately not open for research. We describe a way to get access to Facebook language (or other data), creating a so-called 'Facebook app' that greatly facilitates voluntary data donation.</li>
+		<li>S. Aalberse & W. Stoop <br/>
+		A linguistic paper about a theory why the form 'du' has dissappeared from Dutch, while almost all related languages still have it. We introduce a more computational approach for text style for this particular research question.</li>
+		<li>W. Stoop & A. Van den Bosch (2014). Using ideolects to asdfsdf.<br/>
+		We describe how you can improve text prediction for a person by training the predictor on his/her own written texts (an idea we call ´idiolect´, taken from sociolinguistics). As an example, we predict tweets of a person by training on the earlier tweets of that same person. Interestingly, friends talk that much alike that you can also train on the tweets of friends and have even better predictions.</li>
+		<li>W. Stoop & A. Van den Bosch (2014). <br/>
+		Another paper about text prediction, this time focusing on how it can be used to help people with impaired language and/or speech: even if no linguistic material is available for a patient, a useful language model can be trained using written language by people close to this person.</li>
+		<li>W. Stoop. CLD, dat is niet contrastief<br/>
+		A linguistic paper about the Dutch construction 'Wessel die bouwt een website'. It was believed previously that construction was used to indicate contrast. I show that it is used in a contrastive environment in only a small part of the cases, and offer some alternative hypotheses.</li>
 	</ul>
 </div>
 
-<div class="section white_section" id="games">
+<div class="section white_section smaller_column" id="games">
 	<h3>Games</h3>
 	<h4>Olvand</h4>
+	<p><em>Olvand</em> is a small multiplayer role playing game. It encourages players to build towns together, and contains various minigames. At its peak, it had a fanbase of around a hundred people, creating secundary material like tutorials, wikis and Youtube videos.</p>
 	<h4>Tic Tac Team</h4>
+	<p><em>Tic Tac Team</em> is a two-player puzzle game for the Apple iPad. It contains almost no language, which forces the two players to figure out the game mechanics together, and then create a small communication system to achieve their goals. <em>Together with Jop van Heesch</em>.</p>
 	<h4>Vowel Space Travel</h4>
+	<p><em>Vowel Space Travel</em> is a simple tool that asks the player to identify differences between vowels in English, hoping that this will improve their language skills. My goal was to make an app around this repetitive task that makes it more attractive, in a futuristic setting.</p>
 </div>
 
-<div class="section" id="writings">
+<div class="section smaller_column" id="writings">
 	<h3>Writings</h3>
 	<h4>Game design</h4>
 		<p>I´ve documented the development of my hobby game Olvand quite intensively. The blogs can be found at IndieDB. Some highlights: </p>
@@ -55,17 +67,28 @@
 		</ul>
 </div>
 
-<div class="section white_section" id="software projects">
-	<h3>Software projects</h3>
+<div class="section white_section" id="software_projects">
+	<img class="sidephoto" src="img/guard.JPG">	
+	<h3 class="photo_present">Software projects</h3>
 	<h4>You are what you tweet</h4>
+		<p><em>You are what you tweet</em> is a webdemo displaying the power of language technology and machine learning: it imports all tweets of a particular Twitter timeline, and then performs text prediction and term profiling on it, as well as text classification: it has language models for gender, age, aggression and sarcasm. <em>Together with Florian Kunneman</em>.</p>
 	<h4>Soothsayer</h4>
+		<p><em>Soothsayer</em> is my master's thesis project about text prediction. In the thesis, I showed that text prediction improves when (1) using language models based on text written by the user and (2) that text written by friends of the user also improve the results. In the demo, you can test Soothsayer with various language models. The thesis led to various publications, media attention, and the Radboud University 2013 thesis prize. I explain my project in the video below:</p>
+	<h4>Robot Nao colleague guessing game</h4>
+		<p><em>Robot Nao</em> visited the department where I work. As a fun sideproject, I wrote a game for it where it asks questions that should be answered with yes or no. As a result of it, it can guess which colleague you had in mind:</p>
 	<h4>Procedural meshes & subdivision</h4>
+		<p>Catmull-Clark subdivision is smoothing algorithm that is a basic tool in 3D modeling. It was, however, not yet available for the Unity game engine. I created an implementation of it, which is available at the Unity Asset Store.</p>
 	<h4>PyScreen</h4>
+		<p>GNU screen is a popular tool for multitasking at the command line. Because I sometimes need to access it from Python scripts, I wrote a small library to abstract away the details for me. You can access it by typing <em>pip install pyscreen</em> at the commandline.</p>
 	<h4>Signbank</h4>
+		<p>I maintain the Dutch/American fork of Signbank, a sign language database tool and online sign dictionary. It is one of the main tools of the sign language researchers at the Radboud University Nijmegen, got quite some international attention, and was itself forked by Finnish sign language researchers to create their own Signbank. <em>Together with Micha Hulsbosch and Erwin Komen</em>.</p>	
 	<h4>Fowlt</h4>
+		<p>Fowlt is the English version of Valkuil, a context-sensitive spelling corrector using machine learning. It recognizes errors by comparing all incoming text to the many examples of correct text it has seen. If it finds something that is nearly identical, but not completely identical, to a frequent pattern, it marks it as an error. This way, it is able to mark errors where other spelling correctors typically fail, like the difference between <em>to</em>, <em>two</em> and <em>too</em>, or the difference between <em>xxx</em> and <em>xxx</em>.</p>
+	<h4>Numerous personal websites</h4>
+		<p>Like this one. Highlights are the websites of <a href="http://www.amberstoop.nl/">Amber Stoop</a>, <a href="http://margotvandenberg.edu">Margot van den Berg</a>, <a href="http://www.nicoleneijts.nl/">Nicole Neijts</a> and <a href="http://lottehogeweg.ruhosting.nl">Lotte Hogeweg</a>.</p>
 </div>
 
-<div class="section" id="media_attention">
+<div class="section smaller_column" id="media_attention">
 	<h3>Media attention</h3>
 	<ul>
 		<li></li>

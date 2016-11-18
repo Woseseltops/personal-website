@@ -58,7 +58,7 @@ h3:after
   content: "";
   position: absolute;
   bottom: 0px;
-  left: 0;
+  left: 0px;
   height: 1px;
   width: 350px;
   top: 80px;
@@ -68,11 +68,36 @@ h3:after
   background: linear-gradient(left, #f54949 0%, #f5764a 100%);
 }
 
+h4
+{
+  margin-left: -10px;
+}
+
+li
+{
+  margin: 10px;
+}
+
+.photo_present:after
+{
+  left: 585px;
+}
+
 .section
 {
   height: 800px;
   padding: 100px;
   color: white;
+}
+
+.sidephoto
+{
+  height: 600px;
+  float: left;
+  margin-top: -100px;  
+  margin-left: -100px;  
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
 .white_section
@@ -91,11 +116,24 @@ h3:after
   top: 35%;  
 }
 
+.smaller_column
+{
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
 #title
 {
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgba(245,73,73,0.8)), color-stop(50%, rgba(245,118,73,0.8)));  
   background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));  
+}
+
+#welcome
+{
+  height: 400px;
+  font-size: 20px;
+  padding-right: 145px;
 }
 
 #writings
@@ -108,6 +146,11 @@ h3:after
 {
   background-image: url('img/fountain.JPG');
   background-size: 100%;
+}
+
+#software_projects
+{
+  height: 1000px;
 }
 
 #media_attention
