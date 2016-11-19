@@ -73,9 +73,14 @@ h4
   margin-left: -10px;
 }
 
-li
+a, a:visited
 {
-  margin: 10px;
+  color: #f5764a; 
+}
+
+.publications li
+{
+  margin: 20px;
 }
 
 .photo_present:after
@@ -152,10 +157,11 @@ li
 #software_projects
 {
   height: 1000px;
+  font-size: 12px;
 }
 
 #media_attention
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/sweets.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/sweets.JPG');
   background-size: 100%;
 }
