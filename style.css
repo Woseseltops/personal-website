@@ -127,6 +127,22 @@ a, a:visited
   padding-right: 300px;
 }
 
+.logobar svg
+{
+  margin: 10px;
+}
+
+.logobar path
+{
+  fill : rgb(197, 196, 192);;
+}
+
+.logobar path:hover
+{
+  fill: #f5764a;
+  cursor: pointer;
+}
+
 #title
 {
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));
@@ -141,9 +157,14 @@ a, a:visited
   padding-right: 145px;
 }
 
+#games
+{
+  height: 1200px;
+}
+
 #writings
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/station.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/palm.JPG');
   background-size: 100%;
 }
 

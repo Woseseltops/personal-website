@@ -4,6 +4,50 @@
 	<!--     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>	
     <link href='http://fonts.googleapis.com/css?family=Yeseva_one' rel='stylesheet' type='text/css'>	-->	
  	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function()
+ 	{
+	    // Replace all SVG images with inline SVG
+	    jQuery('img.svg').each(function()
+	    {
+	        var $img = jQuery(this);
+	        var imgID = $img.attr('id');
+	        var imgClass = $img.attr('class');
+	        var imgURL = $img.attr('src');
+
+	        jQuery.get(imgURL, function(data) 
+	        {
+	            // Get the SVG tag, ignore the rest
+	            var $svg = jQuery(data).find('svg');
+
+	            // Add replaced image's ID to the new SVG
+	            if(typeof imgID !== 'undefined') {
+	                $svg = $svg.attr('id', imgID);
+	            }
+	            // Add replaced image's classes to the new SVG
+	            if(typeof imgClass !== 'undefined') {
+	                $svg = $svg.attr('class', imgClass+' replaced-svg');
+	            }
+
+	            // Remove any invalid XML tags as per http://validator.w3.org
+	            $svg = $svg.removeAttr('xmlns:a');
+
+	            // Replace image with new SVG
+	            $img.replaceWith($svg);
+
+			    //Remove all color from the original file
+			    $('path').css("fill", "");            
+
+	        }, 'xml');
+
+	    });
+
+	});
+ 	</script>
+
 </head>
 <body>
 <div class="section" id="title">
@@ -16,6 +60,13 @@
 	<img class="sidephoto" src="img/me.JPG">
 	<h3 class="photo_present">Welcome</h3>
 	<p>Welcome! My name is Wessel Stoop. I work with language & machine learning, and make videogames in my free time. This website aims to be a complete collection of texts I write, my software projects, and what the media write about these two. Furthermore, this website contains some pictures of me to suggest that I totally do not spend all of my days staring at a computer screen.</p>
+	<div class="logobar">
+		<a target="_blank" href="mailto:stoopwessel@gmail.com"><img class="svg" src="icons/gmail.svg"></a>
+		<a target="_blank" href="https://nl.linkedin.com/in/wessel-stoop-45886466"><img class="svg" src="icons/linkedin.svg"></a>
+		<a target="_blank" href="https://github.com/woseseltops"><img class="svg" src="icons/github.svg"></a>
+		<a target="_blank" href="https://instagram.com/wesselstoop"><img class="svg" src="icons/instagram.svg"></a>
+		<a target="_blank" href="http://www.ru.nl/english/people/stoop-w/"><img class="svg" src="icons/ru.svg"></a>
+	</div>
 </div>
 
 <div class="section" id="science">
@@ -50,10 +101,28 @@ Stoop, W. (2009). Het emoticon. Een hulp bij interpretatie? Kennislink.nl, [onli
 	<h3>Games</h3>
 	<h4>Olvand</h4>
 	<p><em>Olvand</em> is a small multiplayer role playing game. It encourages players to build towns together, and contains various minigames. At its peak, it had a fanbase of around a hundred people, creating secundary material like tutorials, wikis and Youtube videos.</p>
+
+	<iframe src='https://gfycat.com/ifr/QuaintTestyEland' frameborder='0' scrolling='no' width='640' height='362' allowfullscreen></iframe>	
+
+	<div class="logobar">
+		<a target="_blank" href="http://olvand.com"><img class="svg" src="icons/website.svg"></a>
+	</div>
+
+
 	<h4>Tic Tac Team</h4>
 	<p><em>Tic Tac Team</em> is a two-player puzzle game for the Apple iPad. It contains almost no language, which forces the two players to figure out the game mechanics together, and then create a small communication system to achieve their goals. <em>Together with Jop van Heesch</em>.</p>
+
+	<div class="logobar">
+		<a target="_blank" href="https://github.com/languageininteraction/TacitCommunicationGame?files=1"><img class="svg" src="icons/github.svg"></a>
+	</div>
+
 	<h4>Vowel Space Travel</h4>
 	<p><em>Vowel Space Travel</em> is a simple tool that asks the player to identify differences between vowels in English, hoping that this will improve their language skills. My goal was to make an app around this repetitive task that makes it more attractive, in a futuristic setting.</p>
+
+	<div class="logobar">
+		<a target="_blank" href="https://github.com/languageininteraction/VowelSpaceTravel"><img class="svg" src="icons/github.svg"></a>
+	</div>
+
 </div>
 
 <div class="section smaller_column" id="writings">
