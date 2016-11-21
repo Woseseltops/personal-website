@@ -143,6 +143,22 @@ a, a:visited
   cursor: pointer;
 }
 
+.explanation
+{
+  margin: 15px;  
+}
+
+.reference
+{
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 13px;  
+}
+
+.classification_title
+{
+  color: #f5764a;   
+}
+
 #title
 {
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));
@@ -170,9 +186,12 @@ a, a:visited
 
 #science
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/fountain.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/fountain.JPG');
   background-size: 100%;
   position:relative;
+  padding-top: 45px;
+  font-size: 14px;
+  height: 915px;  
 }
 
 #software_projects
