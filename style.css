@@ -2,7 +2,7 @@ body
 {
 	font-family: 'Muli';	
   background-image: url("img/barcelona_street.JPG");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-attachment: fixed;
   margin:0px;
 }
@@ -71,7 +71,7 @@ h3:after
 h4
 {
   margin-left: -10px;
-  margin-bottom: -13px;
+  margin-bottom: -1vw;
 }
 
 a, a:visited
@@ -167,8 +167,14 @@ iframe
 
 .image_row img
 {
-  width: 470px;
+  width: 29vw;
   margin: 10px;
+}
+
+.gif
+{
+  width: 40vw;
+  height: 23vw;  
 }
 
 #title
@@ -181,28 +187,30 @@ iframe
 #welcome
 {
   height: 400px;
-  font-size: 20px;
+  font-size: 1.2vw;
   padding-right: 145px;
 }
 
 #games
 {
   height: 1200px;
+  font-size: 1vw;
 }
 
 #writings
 {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/palm.JPG');
-  background-size: 100%;
+  background-size: 100% 100%;
+  font-size: 1vw;
 }
 
 #science
 {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/fountain.JPG');
-  background-size: 100%;
+  background-size: 100% 100%;
   position:relative;
   padding-top: 45px;
-  font-size: 14px;
+  font-size: 0.9vw;
   height: 915px;  
 }
 
@@ -220,5 +228,5 @@ iframe
 #media_attention
 {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/sweets.JPG');
-  background-size: 100%;
+  background-size: 100% 100%;
 }
