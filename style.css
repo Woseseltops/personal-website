@@ -71,11 +71,17 @@ h3:after
 h4
 {
   margin-left: -10px;
+  margin-bottom: -13px;
 }
 
 a, a:visited
 {
   color: #f5764a; 
+}
+
+iframe
+{
+  border: 0px;
 }
 
 .publications li
@@ -157,6 +163,12 @@ a, a:visited
 .classification_title
 {
   color: #f5764a;   
+}
+
+.image_row img
+{
+  width: 470px;
+  margin: 10px;
 }
 
 #title
