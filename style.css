@@ -96,19 +96,20 @@ iframe
 
 .section
 {
-  height: 800px;
-  padding: 100px;
   color: white;
+  padding: 6vw;
+  overflow: hidden;
 }
 
 .sidephoto
 {
-  height: 600px;
+  height: 165%;
   float: left;
-  margin-top: -100px;  
-  margin-left: -100px;  
+
+  margin-left: -6vw;  
   margin-right: 100px;
-  margin-bottom: 100px;
+  margin-top: -6vw;
+  margin-bottom: -6vw;
 }
 
 .white_section
@@ -129,8 +130,8 @@ iframe
 
 .smaller_column
 {
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 16vw;
+  padding-right: 16vw;
 }
 
 .logobar svg
@@ -157,7 +158,7 @@ iframe
 .reference
 {
   color: rgba(255, 255, 255, 0.52);
-  font-size: 13px;  
+  font-size: 0.6vw;  
 }
 
 .classification_title
@@ -179,6 +180,8 @@ iframe
 
 #title
 {
+  height: 800px;
+
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgba(245,73,73,0.8)), color-stop(50%, rgba(245,118,73,0.8)));  
   background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(50%, #f5764a));  
@@ -187,13 +190,12 @@ iframe
 #welcome
 {
   height: 400px;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   padding-right: 145px;
 }
 
 #games
 {
-  height: 1200px;
   font-size: 1vw;
 }
 
@@ -201,7 +203,7 @@ iframe
 {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/palm.JPG');
   background-size: 100% 100%;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 #science
@@ -209,20 +211,18 @@ iframe
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/fountain.JPG');
   background-size: 100% 100%;
   position:relative;
-  padding-top: 45px;
-  font-size: 0.9vw;
-  height: 915px;  
+  font-size: 0.7vw;
+  height: 1000px;  
 }
 
 #software_projects
 {
-  height: 1000px;
-  font-size: 16px;
+  font-size: 0.9vw;
 }
 
 #software_projects img
 {
-  height: 1200px;
+  height: 145%; /* weird value, trial and error */
 }
 
 #media_attention
