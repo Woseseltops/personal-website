@@ -1,6 +1,6 @@
 body
 {
-	font-family: 'Muli';	
+	font-family: 'Muli', sans-serif;	
   background-image: url("img/barcelona_street.JPG");
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -89,11 +89,6 @@ iframe
   margin: 20px;
 }
 
-.photo_present:after
-{
-  left: 585px;
-}
-
 .section
 {
   color: white;
@@ -178,6 +173,13 @@ iframe
   height: 23vw;  
 }
 
+.photo_present
+{
+  background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
+  background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
+}
+
 #title
 {
   height: 800px;
@@ -192,6 +194,11 @@ iframe
   height: 400px;
   font-size: 1.1vw;
   padding-right: 145px;
+}
+
+#welcome .photo_present:after
+{
+  left: 33vw;
 }
 
 #games
@@ -223,6 +230,11 @@ iframe
 #software_projects img
 {
   height: 145%; /* weird value, trial and error */
+}
+
+#software_projects .photo_present:after
+{
+  left: 23vw;
 }
 
 #media_attention

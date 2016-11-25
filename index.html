@@ -1,8 +1,8 @@
 <html>
 <head>
 	<title>Wessel Stoop</title>
-	<!--     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>	
-    <link href='http://fonts.googleapis.com/css?family=Yeseva_one' rel='stylesheet' type='text/css'>	-->	
+	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet'>	
+    <link href='http://fonts.googleapis.com/css?family=Yeseva_one' rel='stylesheet'>
  	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -44,6 +44,11 @@
 	        }, 'xml');
 
 	    });
+
+		if ($(window).width() < 1200)
+		{
+			$('.sidephoto').hide();
+		}
 
 	});
  	</script>
