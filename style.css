@@ -74,6 +74,13 @@ h4
   margin-bottom: -1vw;
 }
 
+td
+{
+  color: white;
+  vertical-align: top;
+  padding-right: 125px;
+}
+
 a, a:visited
 {
   color: #f5764a; 
