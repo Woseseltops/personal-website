@@ -38,6 +38,7 @@ h3
 {
   font-size: 55px;
   font-weight: 100;
+  margin-top: 0px;
 
   /* This ugly code makes the gradient */
   background-color: #f54949;	
