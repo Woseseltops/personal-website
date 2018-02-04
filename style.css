@@ -139,12 +139,12 @@ iframe
   margin: 10px;
 }
 
-.logobar path
+.nonselected_icon
 {
   fill : rgb(197, 196, 192);;
 }
 
-.logobar path:hover
+.selected_icon
 {
   fill: #f5764a;
   cursor: pointer;

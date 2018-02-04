@@ -46,10 +46,16 @@
 
 	    });
 
-		if ($(window).width() < 1200)
-		{
-			$('.sidephoto').hide();
-		}
+	    $('a.icon').mouseenter(function()
+	    {
+	    	$(this).find('path').addClass('selected_icon');
+	    });
+
+	    $('a.icon').mouseleave(function()
+	    {
+	    	$(this).find('path').removeClass('selected_icon');
+	    });
+
 
 	});
  	</script>
@@ -69,11 +75,12 @@
 	<a title="welcome">	</a>
 	<p>Welcome! My name is Wessel Stoop. I work with language & machine learning, and make videogames in my free time. This website aims to be a complete collection of texts I write, software I build, and what the media write about these two - or at least that part of it that is worth mentioning. Furthermore, this website contains some pictures of me to suggest that I totally do not spend all of my waking hours staring at a computer screen.</p>
 	<div class="logobar">
-		<a target="_blank" href="mailto:stoopwessel@gmail.com"><img class="svg" src="icon/gmail.svg"></a>
-		<a target="_blank" href="https://nl.linkedin.com/in/wessel-stoop-45886466"><img class="svg" src="icon/linkedin.svg"></a>
-		<a target="_blank" href="https://github.com/woseseltops"><img class="svg" src="icon/github.svg"></a>
-		<a target="_blank" href="https://instagram.com/wesselstoop"><img class="svg" src="icon/instagram.svg"></a>
-		<a target="_blank" href="http://www.ru.nl/english/people/stoop-w/"><img class="svg" src="icon/ru.svg"></a>
+		<a class="icon nonselected_icon" target="_blank" href="mailto:stoopwessel@gmail.com"><img class="svg" src="icon/gmail.svg"></a>
+		<a class="icon nonselected_icon" target="_blank" href="https://nl.linkedin.com/in/wessel-stoop-45886466"><img class="svg" src="icon/linkedin.svg"></a>
+		<a class="icon nonselected_icon" target="_blank" href="https://github.com/woseseltops"><img class="svg" src="icon/github.svg"></a>
+		<a class="icon nonselected_icon" target="_blank" href="https://instagram.com/wesselstoop"><img class="svg" src="icon/instagram.svg"></a>
+		<a class="icon nonselected_icon" target="_blank" href="https://youtube.com/wesselstoop"><img class="svg" src="icon/youtube.svg"></a>
+		<a class="icon nonselected_icon" target="_blank" href="http://www.ru.nl/english/people/stoop-w/"><img class="svg" src="icon/ru.svg"></a>
 	</div>
 </div>
 
