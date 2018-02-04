@@ -247,3 +247,8 @@ iframe
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/paper.jpg');
   background-size: 100% 100%;
 }
+
+/* Mobile style */
+@media only screen and (max-width: 500px)
+{
+}
