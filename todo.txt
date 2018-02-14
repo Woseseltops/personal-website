@@ -6,11 +6,17 @@ SNEL
 MIDDEL
 ======
 * filmpje/gif (looping!) voor alle softwareprojecten
-* unity.connect maken en linken
 
 LANG
 ====
 * mobiele website zonder achtergrondplaatjes en tekst altijd goed leesbaar (switch in de css)
-* teksten afmaken
+* blogs weer beschikbaar maken
+  * design
 
+LATER
+=====
+unity.connect maken en linken
+
+ONTHOUDEN
+=========
 Terugzetten:C:\Users\Wessel\Documents\htdocs

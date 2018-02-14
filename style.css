@@ -60,7 +60,6 @@ h3
 h4
 {
   margin-left: -10px;
-  margin-bottom: -1vw;
 }
 
 td
@@ -162,12 +161,16 @@ iframe
 .explanation
 {
   margin: 15px;  
+  color: hsl(0, 0%, 75%);
+  font-size: 13px;
 }
 
 .reference
 {
-  color: rgba(255, 255, 255, 0.52);
-  font-size: 12px;  
+  color: white;
+  font-size: 10px;
+  display: inline;
+  font-style: italic;
 }
 
 .no_link
@@ -177,14 +180,14 @@ iframe
 
 .image_row img
 {
-  width: 29vw;
+  width: 420px;
   margin: 10px;
 }
 
 .gif
 {
-  width: 40vw;
-  height: 23vw;  
+  width: 576px;
+  height: 332px;  
 }
 
 .photo_present
@@ -192,6 +195,12 @@ iframe
   background-image: -moz-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
   background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
+}
+
+.background_section
+{
+  background-size: auto 100vw;
+  background-position: center;
 }
 
 #title
@@ -216,28 +225,24 @@ iframe
 
 #games
 {
-  font-size: 1vw;
 }
 
 #writings
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/palm.JPG');
-  background-size: 100% 100%;
-  font-size: 0.9vw;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('img/palm.JPG');
+  font-size: 15px;
 }
 
 #science
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/science.jpg');
-  background-size: auto 100%;
-  background-position: center;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/science.jpg');
   position:relative;
   font-size: 15px;
 }
 
 #software_projects
 {
-  font-size: 0.9vw;
+  font-size: 15px;
 }
 
 #software_projects img
@@ -252,8 +257,7 @@ iframe
 
 #media_attention
 {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/paper.jpg');
-  background-size: 100% 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/paper.jpg');
 }
 
 /* Mobile style */
@@ -267,6 +271,12 @@ iframe
     padding-right: 5px;
   }
 
+  /* The background behavior changes so it never repeats */
+  .background_section
+  {  
+    background-size: auto 100%;
+    background-position: center;
+  }
 }
 
 @media only screen and (max-width: 800px)
@@ -326,5 +336,15 @@ iframe
   .explanation
   {
     display: none;
+  }
+
+  .gif
+  {
+    width: 100%;
+  }
+
+  .image_row img
+  {
+    width: 100%;
   }
 }
