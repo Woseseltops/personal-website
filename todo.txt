@@ -1,0 +1,16 @@
+SNEL
+====
+* Twijfel achtergrondplaatjes... misschien toch beter patronen?
+  * Anders verkleinen
+
+MIDDEL
+======
+* filmpje/gif (looping!) voor alle softwareprojecten
+* unity.connect maken en linken
+
+LANG
+====
+* mobiele website zonder achtergrondplaatjes en tekst altijd goed leesbaar (switch in de css)
+* teksten afmaken
+
+Terugzetten:C:\Users\Wessel\Documents\htdocs
