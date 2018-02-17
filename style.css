@@ -203,6 +203,12 @@ iframe
   background-position: center;
 }
 
+.column
+{
+  float: left;
+  margin-right: 85px;
+}
+
 #title
 {
   height: 800px;
@@ -243,11 +249,7 @@ iframe
 #software_projects
 {
   font-size: 15px;
-}
-
-#software_projects img
-{
-  height: 145%; /* weird value, trial and error */
+  padding: 0px;
 }
 
 #software_projects .photo_present:after
