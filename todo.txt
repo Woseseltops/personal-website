@@ -1,15 +1,13 @@
 SNEL
 ====
-* Twijfel achtergrondplaatjes... misschien toch beter patronen?
-  * Anders verkleinen
 
 MIDDEL
 ======
 * filmpje/gif (looping!) voor alle softwareprojecten
+* Design: grappige foto's anders doen
 
 LANG
 ====
-* mobiele website zonder achtergrondplaatjes en tekst altijd goed leesbaar (switch in de css)
 * blogs weer beschikbaar maken
   * design
 

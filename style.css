@@ -197,6 +197,11 @@ iframe
   background-image: gradient( linear, left top, right top, color-stop(0, #f54949), color-stop(0.5, #f5764a));
 }
 
+.photo_section
+{
+  width: 100%;
+}
+
 .background_section
 {
   background-size: auto 100vw;
@@ -246,10 +251,14 @@ iframe
   font-size: 15px;
 }
 
-#software_projects
+#software_project
 {
   font-size: 15px;
-  padding: 0px;
+}
+
+#photos
+{
+  padding: 0px;  
 }
 
 #software_projects .photo_present:after
