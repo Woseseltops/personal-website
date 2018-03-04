@@ -3,12 +3,29 @@ body
 	background-color: hsla(0, 4%, 96%, 1);
 }
 
+.header
+{
+    background: white;
+	font-family: 'Muli';
+    padding-bottom: 120px;	
+}
+
+.header a
+{
+    position: relative;
+    top: 12px;
+    left: 12px;
+    text-decoration: none;
+    color: hsl(0, 0%, 48%);
+    font-size: 20px;	
+}
+
 #main
 {
 	width: 800px;
 	margin: auto;
 	font-family: 'Libre Baskerville', serif;
-	line-height: 1.65;
+	line-height: 1.85;
 	letter-spacing: 0.5;
 	font-size:15px;
 	color: hsla(0, 0%, 0%, 0.6);
@@ -18,6 +35,7 @@ body
 {
 	font-weight: 700;
     letter-spacing: 1.5;
+	line-height: 1.65;
     font-size:17px;
 	color: hsla(0, 0%, 0%, 0.7);
 }
@@ -29,10 +47,12 @@ p
 
 h1
 {
-	font-family: 'Muli';
-	font-size: 60px;
+	width: 800px;
+	margin: auto;
+	font-size: 75px;
 	color: black;
 	font-weight: 200;
+    margin-top: 55px;
 }
 
 .name
@@ -48,4 +68,13 @@ h1
 {
 	font-style: italic;
     color: hsla(4, 89%, 62%, 1);	
+}
+
+img.avatar
+{
+	margin: auto;
+    margin-top: -50px;
+    position: relative;
+    width: 100px;
+    display: block;
 }
