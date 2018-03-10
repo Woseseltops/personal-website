@@ -138,8 +138,8 @@ iframe
 
 .smaller_column
 {
-  padding-left: 16vw;
-  padding-right: 16vw;
+  padding-left: 30vw;
+  padding-right: 30vw;
 }
 
 .logobar svg
@@ -180,8 +180,13 @@ iframe
 
 .image_row img
 {
-  width: 420px;
+  width: 345px;
   margin: 10px;
+}
+
+.single_image
+{
+  width: 345px;
 }
 
 .gif
@@ -212,6 +217,13 @@ iframe
 {
   float: left;
   margin-right: 85px;
+}
+
+.visual_content
+{
+  position: relative;
+  margin: 0 auto;
+  display: block;
 }
 
 #title
@@ -357,5 +369,11 @@ iframe
   .image_row img
   {
     width: 100%;
+  }
+
+  .smaller_column
+  {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
