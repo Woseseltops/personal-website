@@ -105,6 +105,7 @@ iframe
 .left_photo
 {
   float: left;
+  width: 475px;
 }
 
 .right_text
